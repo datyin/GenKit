@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/vite-plugin-execute",
+  "description": "Execute command after vite build",
+  "version": "0.0.1"
+}

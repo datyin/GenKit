@@ -1,0 +1,1 @@
+# @genkit/eslint-config

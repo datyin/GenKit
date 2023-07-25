@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/tsconfig-browser",
+  "description": "TypeScript configuration for web applications",
+  "version": "0.0.1",
+  "main": "index.json",
+  "module": "index.json",
+  "exports": {
+    "./package.json": "./package.json",
+    "./declaration": "./declaration.json",
+    ".": {
+      "import": "./index.json",
+      "require": "./index.json"
+    }
+  },
+  "author": {
+    "name": "Jove Jonovski",
+    "email": "jovejonovski@gmail.com",
+    "url": "https://github.com/datyin"
+  },
+  "repository": {
+    "directory": "configs/tsconfig-browser",
+    "type": "git",
+    "url": "https://github.com/datyin/GenKit"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

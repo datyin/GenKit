@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/spfx-bundler",
+  "description": "Bundle spfx project using vite",
+  "version": "0.0.1"
+}

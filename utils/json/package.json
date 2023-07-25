@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/json",
+  "description": "JSON utilities for Genkit",
+  "version": "0.0.1"
+}

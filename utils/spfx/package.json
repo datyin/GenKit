@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/spfx",
+  "description": "SPFX type helpers, and other utilities for working with SharePoint Online.",
+  "version": "0.0.1"
+}

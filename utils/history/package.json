@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/history",
+  "description": "Module to store changes in a history",
+  "version": "0.0.1"
+}
