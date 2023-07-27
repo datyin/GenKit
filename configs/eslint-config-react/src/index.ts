@@ -1,7 +1,7 @@
 import type { ESLint } from "eslint";
 
 const config: ESLint.ConfigData = {
-  extends: ["@bat/eslint-config"],
+  extends: ["@genkit/eslint-config"],
   plugins: [
     "react",
     "react-hooks",
