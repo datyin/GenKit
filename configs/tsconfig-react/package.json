@@ -13,6 +13,10 @@
       "require": "./index.json"
     }
   },
+  "files": [
+    "./index.json",
+    "./declaration.json"
+  ],
   "author": {
     "name": "Jove Jonovski",
     "email": "jovejonovski@gmail.com",
@@ -27,7 +31,7 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "typescript": ">=5.0.0"
+    "typescript": ">=4.7"
   },
   "keywords": [
     "tsconfig",

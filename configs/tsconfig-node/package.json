@@ -13,6 +13,10 @@
       "require": "./index.json"
     }
   },
+  "files": [
+    "./index.json",
+    "./declaration.json"
+  ],
   "author": {
     "name": "Jove Jonovski",
     "email": "jovejonovski@gmail.com",
