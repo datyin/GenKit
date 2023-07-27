@@ -271,7 +271,6 @@ const config: ESLint.ConfigData = {
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-duplicate-enum-values": "error",
-    "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-unsafe-declaration-merging": "error",

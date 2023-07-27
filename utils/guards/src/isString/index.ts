@@ -16,7 +16,7 @@ function isString(input: unknown, options: IsStringOptions = {}): input is strin
     return true;
   }
 
-  if (input != null && options.trueOnStringConstructor && input instanceof String) {
+  if (input instanceof String && options.trueOnStringConstructor) {
     return true;
   }
 

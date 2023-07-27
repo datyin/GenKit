@@ -1,6 +1,16 @@
 interface GetArrayOptions<T = unknown> {
+  /**
+   * The default value to return if the input is not an array.
+   * @default []
+   */
   default?: T[];
-  typeGuard?: (input: unknown) => input is T;
+
+  /**
+   * Filter the input array to include only items that match the function.
+   * @param input The item to check.
+   * @returns `true` if the item should be included in the output array.
+   */
+  filter?: (input: unknown) => input is T;
 }
 
 /**
@@ -16,8 +26,8 @@ function getArray<T = unknown>(input: unknown, options: GetArrayOptions<T> = {})
   if (Array.isArray(input)) {
     for (const item of input) {
       // if we have a type guard
-      if (options.typeGuard != null) {
-        if (options.typeGuard(item)) {
+      if (options.filter != null) {
+        if (options.filter(item)) {
           output.push(item);
         }
       }

@@ -1,8 +1,11 @@
+import { isObject } from "../isObject";
+
 interface GetObjectOptions {
+  default?: Record<string, any>;
 }
 
-function getObject(input: unknown, options: GetObjectOptions = {}): unknown {
-  return input;
+function getObject<T = Record<string, any>>(input: unknown, options: GetObjectOptions = {}): T {
+  return isObject<T>(input) ? input : isObject<T>(options.default) ? options.default : {} as T;
 }
 
 export { getObject };

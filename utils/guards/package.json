@@ -3,6 +3,9 @@
   "name": "@genkit/guards",
   "description": "Typeguards, type helpers, and other utilities for working with typescript/javascript types.",
   "version": "0.0.1",
+  "scripts": {
+    "test": "vitest ."
+  },
   "devDependencies": {
     "@genkit/eslint-config": "workspace:^",
     "ibantools": "^4.3.3"
