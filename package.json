@@ -15,8 +15,13 @@
   "bugs": "https://github.com/datyin/GenKit/issues",
   "homepage": "https://github.com/datyin/GenKit",
   "license": "MIT",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test --watch=false"
+  },
   "devDependencies": {
-    "@types/node": "^20.4.4",
+    "@types/node": "^20.4.5",
+    "@vitest/ui": "^0.33.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.7",
     "vitest": "^0.33.0"

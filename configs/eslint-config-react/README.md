@@ -1,4 +1,4 @@
-# @genkit/eslint-config
+# @genkit/eslint-config-react
 
 Double Quote, Semi and other best practices.
 
@@ -6,13 +6,13 @@ Double Quote, Semi and other best practices.
 
 ```bash
 # pnpm
-pnpm add -D @genkit/eslint-config
+pnpm add -D @genkit/eslint-config-react
 
 # yarn
-yarn add -D @genkit/eslint-config
+yarn add -D @genkit/eslint-config-react
 
 # npm
-npm install -D @genkit/eslint-config
+npm install -D @genkit/eslint-config-react
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install -D @genkit/eslint-config
 {
   "$schema": "https://json.schemastore.org/eslintrc",
   "root": true,
-  "extends": "@genkit/eslint-config"
+  "extends": "@genkit/eslint-config-react"
 }
 ```
 

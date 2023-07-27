@@ -17,3 +17,23 @@ GenKit is a comprehensive TypeScript project designed to streamline the developm
 ## Use Case:
 
 GenKit is perfect for developers looking to build scalable and maintainable web applications in TypeScript. Whether you're building a small personal project or a large enterprise application, GenKit can speed up your development process by providing a solid foundation of generic utilities, hooks, and components.
+
+# Versioning
+
+## Format
+
+`YYYY-MM-DD` - `MAJOR.MINOR.PATCH`
+
+- Added xxx
+- Fixed xxx
+- Improved xxx
+- Changed xxx
+- Other...
+
+## Version Info
+
+- **Major version**: This number is incremented when there are incompatible changes in the software, meaning that the software changes in such a way that it may no longer be compatible with certain systems or previous versions of itself. This could mean a complete overhaul of the system, significant changes to the user interface or functionality, or other changes that require users to alter the way they interact with the software.
+
+- **Minor version**: This number is incremented when new features are added in a backwards-compatible manner. This means that the software has been expanded or improved in some way, but not in a way that would prevent it from working with systems that were compatible with previous versions. It may include things like new features, improvements, or non-breaking changes.
+
+- **Patch version**: This number is incremented when backwards-compatible bug fixes are made. These are generally small tweaks to fix problems or bugs in the software without adding any new functionality. A bug fix is defined as an internal change that fixes incorrect behavior.

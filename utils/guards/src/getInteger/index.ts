@@ -9,11 +9,14 @@ interface GetIntegerOptions extends IsIntegerOptions {
 }
 
 function getInteger(input: unknown, options: GetIntegerOptions = {}): number {
-  const value = isInteger(input) ? input : isInteger(options.default) ? options.default : 0;
+  let value = isInteger(input) ? input : isInteger(options.default) ? options.default : 0;
 
   const [min, max] = getMinMaxInteger(options.min, options.max);
 
-  return value >= min && value <= max ? value : min;
+  if (value > max) value = max;
+  if (value < min) value = min;
+
+  return value;
 }
 
 export { getInteger };

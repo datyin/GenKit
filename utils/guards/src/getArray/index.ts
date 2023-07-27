@@ -1,3 +1,9 @@
+/**
+ * Options to control the behavior of {@link getArray}.
+ * @public
+ * @category Getters
+ * @typeParam T - The type of the items in the array.
+ */
 interface GetArrayOptions<T = unknown> {
   /**
    * The default value to return if the input is not an array.
@@ -19,6 +25,8 @@ interface GetArrayOptions<T = unknown> {
  * @param input The value to check.
  * @param options Options to control the behavior.
  * @returns An array of the specified type.
+ *
+ * @category Getters
  */
 function getArray<T = unknown>(input: unknown, options: GetArrayOptions<T> = {}): T[] {
   const output: T[] = [];
