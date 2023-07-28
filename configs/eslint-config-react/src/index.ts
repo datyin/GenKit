@@ -18,7 +18,6 @@ const config: ESLint.ConfigData = {
     "react/jsx-indent": ["error", 2, { checkAttributes: true, indentLogicalExpressions: true }],
     "react/jsx-indent-props": ["error", "first"],
     "react/jsx-pascal-case": ["error"],
-    "react/jsx-one-expression-per-line": ["error", { allow: "literal" }],
     "react/jsx-sort-props": ["error", { callbacksLast: true, shorthandFirst: true, reservedFirst: true, ignoreCase: true }],
     "react/jsx-tag-spacing": ["error", { beforeSelfClosing: "always" }],
     "react/prefer-es6-class": ["error", "always"],
