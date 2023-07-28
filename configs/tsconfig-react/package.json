@@ -2,41 +2,43 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/tsconfig-react",
   "description": "TypeScript configuration for react applications",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.json",
   "module": "index.json",
   "exports": {
     "./package.json": "./package.json",
     "./declaration": "./declaration.json",
     ".": {
-      "import": "./index.json",
-      "require": "./index.json"
+      "require": "./index.json",
+      "import": "./index.json"
     }
   },
   "files": [
     "./index.json",
     "./declaration.json"
   ],
-  "author": {
-    "name": "Jove Jonovski",
-    "email": "jovejonovski@gmail.com",
-    "url": "https://github.com/datyin"
-  },
   "repository": {
     "directory": "configs/tsconfig-node",
     "type": "git",
     "url": "https://github.com/datyin/GenKit"
   },
-  "devDependencies": {
-    "typescript": "^5.1.6"
-  },
-  "peerDependencies": {
-    "typescript": ">=4.7"
-  },
   "keywords": [
     "tsconfig",
     "typescript"
   ],
+  "author": {
+    "name": "Jove Jonovski",
+    "email": "jovejonovski@gmail.com",
+    "url": "https://github.com/datyin"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.7"
+  },
+  "devDependencies": {
+    "@genkit/eslint-config": "workspace:^",
+    "@genkit/tsconfig-browser": "workspace:^",
+    "typescript": "^5.1.6"
+  },
   "publishConfig": {
     "access": "public"
   }

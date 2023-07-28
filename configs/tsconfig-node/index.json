@@ -8,6 +8,7 @@
     "useDefineForClassFields": true,
     "skipLibCheck": true,
 
+    "esModuleInterop": true,
     "allowArbitraryExtensions": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
