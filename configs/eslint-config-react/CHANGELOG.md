@@ -1,3 +1,7 @@
+`2023-07-27` - `0.0.6`
+
+- Disabled `react/jsx-indent` because its buggy
+
 `2023-07-27` - `0.0.4`
 
 - Disabled `react/jsx-one-expression-per-line` because its buggy

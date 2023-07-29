@@ -15,7 +15,6 @@ const config: ESLint.ConfigData = {
     "react/jsx-curly-spacing": ["error", { when: "never", children: true }],
     "react/jsx-equals-spacing": ["error", "never"],
     "react/jsx-first-prop-new-line": ["error", "multiline"],
-    "react/jsx-indent": ["error", 2, { checkAttributes: true, indentLogicalExpressions: true }],
     "react/jsx-indent-props": ["error", "first"],
     "react/jsx-pascal-case": ["error"],
     "react/jsx-sort-props": ["error", { callbacksLast: true, shorthandFirst: true, reservedFirst: true, ignoreCase: true }],

@@ -567,6 +567,18 @@ const config: ESLint.ConfigData = {
         "@typescript-eslint/space-infix-ops": ["error"]
       }
     },
+    {
+      files: [
+        "gulpfile.js",
+        "gulpfile.ts",
+        "gulpfile.cjs",
+        "gulpfile.mjs"
+      ],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+        "no-param-reassign": "off"
+      }
+    },
     ...importer ?? [],
     ...unicorn ?? [],
     ...json ?? [],
