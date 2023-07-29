@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/eslint-config",
   "description": "ESLint config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
@@ -34,8 +34,11 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
     "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jsonc": "^2.9.0",
+    "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-toml": "^0.5.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "eslint-plugin-yml": "^1.8.0",
@@ -44,10 +47,7 @@
   "devDependencies": {
     "@genkit/tsconfig-browser": "workspace:^",
     "@genkit/tsconfig-node": "workspace:^",
-    "@types/eslint": "^8.44.1",
-    "eslint": "^8.46.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-markdown": "^3.0.1"
+    "@types/eslint": "^8.44.1"
   },
   "publishConfig": {
     "access": "public"
