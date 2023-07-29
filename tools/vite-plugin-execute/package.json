@@ -1,6 +1,50 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/vite-plugin-execute",
-  "description": "Execute command after vite build",
-  "version": "0.0.1"
+  "description": "A vite plugin to execute shell command",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite",
+    "plugin",
+    "vite-plugin",
+    "execute",
+    "shell",
+    "electron"
+  ],
+  "author": {
+    "name": "Jove Jonovski",
+    "email": "jovejonovski@gmail.com",
+    "url": "https://github.com/datyin"
+  },
+  "scripts": {
+    "dts": "tsc --project tsconfig.declaration.json",
+    "build": "vite build && pnpm run dts",
+    "prepublish": "pnpm run build"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.3",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "@genkit/eslint-config": "workspace:^",
+    "@genkit/tsconfig-node": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

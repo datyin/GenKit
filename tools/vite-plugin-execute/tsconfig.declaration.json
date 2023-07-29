@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": false,
+    "outFile": "dist/index.d.ts",
+    "isolatedModules": false,
+    "allowImportingTsExtensions": false
+  },
+  "files": [
+    "./package.json",
+    "./src/index.ts"
+  ]
+}
