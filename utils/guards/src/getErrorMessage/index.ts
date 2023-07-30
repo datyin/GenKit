@@ -14,8 +14,10 @@ function getErrorMessage(input: unknown, options: Readonly<GetErrorMessageOption
     return input;
   }
 
-  if (isObject(input) && "message" in input) {
-    return toString(input.message);
+  if (isObject(input)) {
+    if ("message" in input) return toString(input.message);
+    if ("reason" in input) return toString(input.reason);
+    if ("error" in input) return toString(input.error);
   }
 
   return isString(options.default) ? options.default : "";
