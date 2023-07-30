@@ -63,6 +63,7 @@ export { getDate } from "./getDate";
 export { getDebtorNumber } from "./getDebtorNumber";
 export { getDifferences } from "./getDifferences";
 export { getEmail } from "./getEmail";
+export { getErrorMessage } from "./getErrorMessage";
 export { getGuid } from "./getGuid";
 export { getIBAN } from "./getIBAN";
 export { getInteger } from "./getInteger";
