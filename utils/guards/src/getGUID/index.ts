@@ -1,12 +1,12 @@
-import { isGUID } from "../isGUID";
+import { isGuid } from "../isGuid";
 
-interface GetGUIDOptions {
+interface GetGuidptions {
   default?: string;
 }
 
-function getGUID(input: unknown, options: GetGUIDOptions = {}): string {
-  return isGUID(input) ? input : isGUID(options.default) ? options.default : "00000000-0000-0000-0000-000000000000";
+function getGuid(input: unknown, options: Readonly<GetGuidptions> = {}): string {
+  return isGuid(input) ? input : isGuid(options.default) ? options.default : "00000000-0000-0000-0000-000000000000";
 }
 
-export { getGUID };
-export type { GetGUIDOptions };
+export { getGuid };
+export type { GetGuidptions };

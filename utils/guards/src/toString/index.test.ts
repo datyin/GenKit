@@ -13,6 +13,8 @@ const cases: [unknown, ToStringOptions | undefined, unknown][] = [
   ["hello", {}, "hello"],
   [{}, {}, ""],
   [{ a: 1 }, {}, "a: 1"],
+  [{ a: 1, b: 2 }, { joinMethod: "keys" }, "a, b"],
+  [{ a: 1, b: 2 }, { joinMethod: "values" }, "1, 2"],
   [[], {}, ""],
   [[1, 2, 3], {}, "1, 2, 3"],
   [[1, "2", 3], {}, "1, 2, 3"],

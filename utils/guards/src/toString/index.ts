@@ -11,17 +11,16 @@ interface ToStringOptions {
   default?: string;
 
   /**
-   * The separator to use when joining an array.
+   * The separator to use when joining an array, set, map or object.
    * @default ", "
    */
   separator?: string;
 
   /**
-   * The number of spaces to use when stringifying an object.
-   * @default 2
-   * @set 0 - Disable pretty printing.
+   * The method to use when joining an object or map.
+   * @default "entries"
    */
-  jsonSpace?: number;
+  joinMethod?: "entries" | "keys" | "values";
 }
 
 /**
@@ -53,10 +52,26 @@ function toString(input: unknown, options: ToStringOptions = {}): string {
     value = Array.from(input.values()).map((item) => toString(item, options)).join(options.separator || ", ");
   }
   else if (isMap(input)) {
-    value = Array.from(input).map(([key, item]) => `${key}: ${toString(item, options)}`).join(options.separator || ", ");
+    if (options.joinMethod === "keys") {
+      value = Array.from(input).map(([key, item]) => `${key}`).join(options.separator || ", ");
+    }
+    else if (options.joinMethod === "values") {
+      value = Array.from(input).map(([key, item]) => `${toString(item, options)}`).join(options.separator || ", ");
+    }
+    else {
+      value = Array.from(input).map(([key, item]) => `${key}: ${toString(item, options)}`).join(options.separator || ", ");
+    }
   }
   else if (isObject(input)) {
-    value = Array.from(Object.entries(input)).map(([key, item]) => `${key}: ${toString(item, options)}`).join(options.separator || ", ");
+    if (options.joinMethod === "keys") {
+      value = Array.from(Object.entries(input)).map(([key, item]) => `${key}`).join(options.separator || ", ");
+    }
+    else if (options.joinMethod === "values") {
+      value = Array.from(Object.entries(input)).map(([key, item]) => `${toString(item, options)}`).join(options.separator || ", ");
+    }
+    else {
+      value = Array.from(Object.entries(input)).map(([key, item]) => `${key}: ${toString(item, options)}`).join(options.separator || ", ");
+    }
   }
 
   return value;

@@ -17,10 +17,10 @@ const MAX_DATE_TIMESTAMP = 8640000000000000;
  *
  * @param min The minimum date
  * @param max The maximum date
- * @param resetMS Reset the milliseconds to 0
+ * @param resetMS Reset the milliseconds to 0 - default: `true`
  * @returns The minimum and maximum date in correct order
  */
-function getMinMaxDate(min: unknown = new Date(MIN_DATE_TIMESTAMP), max: unknown = new Date(MAX_DATE_TIMESTAMP), resetMS: boolean = false): [Date, Date] {
+function getMinMaxDate(min: unknown = new Date(MIN_DATE_TIMESTAMP), max: unknown = new Date(MAX_DATE_TIMESTAMP), resetMS: boolean = true): [Date, Date] {
   const minimum = isDate(min) ? min : new Date(MIN_DATE_TIMESTAMP);
   const maximum = isDate(max) ? max : new Date(MAX_DATE_TIMESTAMP);
 

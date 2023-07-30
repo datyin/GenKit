@@ -1,8 +1,8 @@
 interface IsArrayOptions<T = unknown> {
-  readonly typeGuard?: (input: unknown) => input is T[];
+  typeGuard?: (input: unknown) => input is T[];
 }
 
-function isArray<T = unknown>(input: unknown, options: IsArrayOptions = {}): input is T[] {
+function isArray<T = unknown>(input: unknown, options: Readonly<IsArrayOptions> = {}): input is T[] {
   if (!Array.isArray(input)) {
     return false;
   }

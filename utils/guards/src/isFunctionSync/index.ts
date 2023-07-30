@@ -1,4 +1,4 @@
-import { getType } from "../getType";
+import { getTypeOf } from "../getTypeOf";
 import type { AnyFunc } from "../isFunction";
 
 /**
@@ -6,7 +6,7 @@ import type { AnyFunc } from "../isFunction";
  * @param input
  */
 function isFunctionSync<T = AnyFunc>(input: unknown): input is T {
-  const type = getType(input);
+  const type = getTypeOf(input);
 
   return (
     input != null &&

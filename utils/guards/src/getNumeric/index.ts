@@ -3,8 +3,8 @@ import { isBoolean } from "../isBoolean";
 import { isDate } from "../isDate";
 import { isHexadecimal } from "../isHexadecimal";
 import { isInteger } from "../isInteger";
-import { isNotEmptyString } from "../isNotEmptyString";
 import { isNumber } from "../isNumber";
+import { isStringNotEmpty } from "../isStringNotEmpty";
 
 type Numeric = `${number}` | `${bigint}`;
 
@@ -49,7 +49,7 @@ function getNumeric(input: unknown, options: GetNumericOptions = {}): Numeric {
   else if (isHexadecimal(input)) {
     output = options.convertHexadecimal !== false ? `${Number.parseInt(input as any, 16)}` : `${input}`;
   }
-  else if (isNotEmptyString(input)) {
+  else if (isStringNotEmpty(input)) {
     /**
      * Extract the first number from the string.
      * This support numbers with decimal places and scientific notation as well as numbers with thousands separators.

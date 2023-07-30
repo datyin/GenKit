@@ -13,8 +13,8 @@ const REGEX_GUID = /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA
  * @param input The value to check.
  * @returns `true` if `input` is a UUID/GUID, `false` otherwise.
  */
-function isGUID(input: unknown): input is string {
+function isGuid(input: unknown): input is string {
   return typeof input === "string" && REGEX_GUID.test(input);
 }
 
-export { isGUID, REGEX_GUID };
+export { isGuid, REGEX_GUID };

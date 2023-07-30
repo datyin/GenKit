@@ -1,4 +1,4 @@
-import { getType } from "../getType";
+import { getTypeOf } from "../getTypeOf";
 
 type AnyFunc = (...args: any[]) => any;
 
@@ -9,7 +9,7 @@ type AnyAsyncFunc = (...args: any[]) => Promise<any>;
  * @param input
  */
 function isFunction<T = AnyFunc | AnyAsyncFunc>(input: unknown): input is T {
-  const type = getType(input);
+  const type = getTypeOf(input);
 
   return (
     input != null &&

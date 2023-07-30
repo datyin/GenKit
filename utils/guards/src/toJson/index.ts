@@ -1,7 +1,7 @@
 import { getInteger } from "../getInteger";
 import { getString } from "../getString";
 
-interface ToJsonOptions {
+interface ToJSONOptions {
   default?: string;
 
   /**
@@ -34,7 +34,7 @@ function replacer(key: unknown, value: unknown, seen: WeakSet<any>) {
   return value;
 }
 
-function toJson(input: unknown, options?: ToJsonOptions): string {
+function toJSON(input: unknown, options: Readonly<ToJSONOptions> = {}): string {
   try {
     const seen = new WeakSet();
     const spaces = getInteger(options?.spaces, { min: 0, max: 10, default: 2 });
@@ -46,5 +46,5 @@ function toJson(input: unknown, options?: ToJsonOptions): string {
   }
 }
 
-export { toJson };
-export type { ToJsonOptions };
+export { toJSON };
+export type { ToJSONOptions };

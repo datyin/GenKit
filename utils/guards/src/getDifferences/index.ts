@@ -1,5 +1,4 @@
 import { isArray } from "../isArray";
-import { isNullish } from "../isNullish";
 import { isObject } from "../isObject";
 import { toString } from "../toString";
 
@@ -7,14 +6,6 @@ interface GetDifferenceItem {
   path: string;
   from: string;
   into: string;
-}
-
-function getValue(input: unknown, prettyPrint = ""): string {
-  if (isNullish(input)) {
-    return "";
-  }
-
-  return JSON.stringify(input, undefined, 2);
 }
 
 /**

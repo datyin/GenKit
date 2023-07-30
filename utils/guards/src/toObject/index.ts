@@ -1,5 +1,4 @@
 import { isArray } from "../isArray";
-import { isMap } from "../isMap";
 import { isObject } from "../isObject";
 import { isSet } from "../isSet";
 

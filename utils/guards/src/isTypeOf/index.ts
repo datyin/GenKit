@@ -1,4 +1,4 @@
-import { getType } from "../getType";
+import { getTypeOf } from "../getTypeOf";
 
 /**
  * Checks if the input is of the specified type.
@@ -8,7 +8,7 @@ import { getType } from "../getType";
  * @returns `true` if the input is of the specified type, `false` otherwise.
  */
 function isTypeOf<T = unknown>(input: unknown, type: string): input is T {
-  return getType(input) === type;
+  return getTypeOf(input) === type;
 }
 
 export { isTypeOf };

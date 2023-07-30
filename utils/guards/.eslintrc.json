@@ -1,3 +1,4 @@
 {
-  "extends": "@genkit/eslint-config"
+  "extends": "@genkit/eslint-config",
+  "root": true
 }

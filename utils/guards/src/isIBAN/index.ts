@@ -1,5 +1,5 @@
 import { isValidIBAN } from "ibantools";
-import { getString } from "../getString/input";
+import { getString } from "../getString";
 
 interface IsIBANOptions {
   /**
