@@ -1,9 +1,12 @@
+import { getNumber } from "..";
 import { getNumeric } from "../getNumeric";
 import { isNumber } from "../isNumber";
 import type { IsNumberOptions } from "../isNumber";
 
 interface ToNumberOptions extends IsNumberOptions {
   default?: number;
+  min?: number;
+  max?: number;
 }
 
 function toNumber(input: unknown, options: ToNumberOptions = {}): number {
@@ -16,10 +19,10 @@ function toNumber(input: unknown, options: ToNumberOptions = {}): number {
   const value = Number.parseFloat(numeric);
 
   if (isNumber(value)) {
-    return value;
+    return getNumber(value, { min: options.min, max: options.max });
   }
 
-  return fallback;
+  return getNumber(fallback, { min: options.min, max: options.max });
 }
 
 export { toNumber };

@@ -8,7 +8,7 @@ interface GetNumberOptions extends IsNumberOptions {
   max?: number;
 }
 
-function getNumber(input: unknown, options: GetNumberOptions = {}): unknown {
+function getNumber(input: unknown, options: GetNumberOptions = {}): number {
   let value = isNumber(input) ? input : isNumber(options.default) ? options.default : 0;
 
   const [min, max] = getMinMaxNumber(options.min, options.max);
