@@ -6,7 +6,7 @@
     "declaration": true,
     "allowImportingTsExtensions": false,
     "isolatedModules": false,
-    "outFile": "./dist/index.d.ts"
+    "outDir": "./dist"
   },
   "include": [
     "./src/**/*.ts"
