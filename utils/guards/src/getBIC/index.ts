@@ -1,4 +1,4 @@
-import { isBIC } from "../isBIC";
+import { getString, isBIC } from "../index";
 
 interface GetBICOptions {
   default?: string;
@@ -18,7 +18,15 @@ interface GetBICOptions {
  * ```
  */
 function getBIC(input: unknown, options: Readonly<GetBICOptions> = {}) {
-  return isBIC(input) ? input : isBIC(options.default) ? options.default : "";
+  const value = getString(input).replace(/\s+/, "").toUpperCase().trim();
+
+  if (isBIC(value)) {
+    return value;
+  }
+
+  const fallback = getString(options.default).replace(/\s+/, "").toUpperCase().trim();
+
+  return isBIC(fallback) ? fallback : "";
 }
 
 export { getBIC };

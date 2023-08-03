@@ -82,6 +82,7 @@ export { getString } from "./getString";
 export { getTypeOf } from "./getTypeOf";
 export { getURL } from "./getURL";
 export { getURLString } from "./getURLString";
+export { getVersion } from "./getVersion";
 
 export { toArray } from "./toArray";
 export { toBigInt } from "./toBigInt";

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@genkit/tsconfig-node",
+  "compilerOptions": {
+    "noEmit": false,
+    "composite": true,
+    "allowImportingTsExtensions": false
+  },
+  "include": [
+    "./package.json",
+    "./vite.config.ts"
+  ]
+}

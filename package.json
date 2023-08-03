@@ -3,18 +3,18 @@
   "private": true,
   "name": "genkit",
   "description": "Generic Toolkit for frontend developers",
-  "author": {
-    "name": "JONOVSKI Jove",
-    "email": "jovejonovski@gmail.com",
-    "url": "https://github.com/datyin"
-  },
+  "license": "MIT",
+  "homepage": "https://github.com/datyin/GenKit",
   "repository": {
     "type": "git",
     "url": "https://github.com/datyin/GenKit"
   },
   "bugs": "https://github.com/datyin/GenKit/issues",
-  "homepage": "https://github.com/datyin/GenKit",
-  "license": "MIT",
+  "author": {
+    "name": "JONOVSKI Jove",
+    "email": "jovejonovski@gmail.com",
+    "url": "https://github.com/datyin"
+  },
   "scripts": {
     "build": "pnpm -r run build",
     "test": "pnpm -r run test --watch=false"

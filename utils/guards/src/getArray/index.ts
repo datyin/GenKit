@@ -16,7 +16,7 @@ interface GetArrayOptions<T = unknown> {
    * @param input The item to check.
    * @returns `true` if the item should be included in the output array.
    */
-  filter?: (input: unknown) => input is T;
+  filter?: (input: unknown) => boolean;
 }
 
 /**

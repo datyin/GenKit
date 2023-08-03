@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/fs",
+  "description": "File system utilities",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@genkit/guards": "workspace:^",
+    "@types/node": "^20.4.5",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "@genkit/eslint-config": "workspace:^",
+    "@genkit/tsconfig-node": "workspace:^"
+  }
+}

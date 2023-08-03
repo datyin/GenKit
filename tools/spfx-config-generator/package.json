@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/spfx-config-generator",
+  "description": "Generates a config files for SPFx projects",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "spfx",
+    "config",
+    "generator"
+  ],
+  "dependencies": {
+    "@genkit/fs": "workspace:^",
+    "@genkit/guards": "workspace:^",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2"
+  }
+}
