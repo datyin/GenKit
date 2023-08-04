@@ -60,7 +60,7 @@ async function generatePackageSolution(pkg: Record<string, any>, override?: Deep
   const name = getName(pkg, "");
   const { shortDescription, longDescription } = getDescription(pkg, override);
 
-  const supportedLocales = getArray(override?.solution?.supportedLocales, {
+  const supportedLocales = getArray<string>(override?.solution?.supportedLocales, {
     default: [],
     filter: (locale: unknown) => {
       return (/^[a-z]{2}-[a-z]{2}$/i).test(getString(locale));
@@ -100,7 +100,13 @@ async function generatePackageSolution(pkg: Record<string, any>, override?: Deep
         }
       ]
     },
-    paths: { zippedPackage: `solution/${name}.sppkg` }
+    paths: {
+      packageDir: "./sharepoint",
+      debugDir: "solution/debug",
+      featureXmlDir: "feature_xml",
+      sharepointAssetDir: "assets",
+      zippedPackage: `solution/${name}.sppkg`
+    }
   };
 }
 

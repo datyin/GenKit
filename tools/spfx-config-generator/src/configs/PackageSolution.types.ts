@@ -130,27 +130,32 @@ export interface PackageSolutionConfig {
   $schema?: string;
   paths?: {
     /**
-     * The packaging root folder. Defaults to './sharepoint'
+     * The packaging root folder
+     * @default "./sharepoint"
      */
     packageDir?: string;
 
     /**
-     * The folder to write the raw package to disk for debugging. Defaults to 'solution/debug'
+     * The folder to write the raw package to disk for debugging.
+     * @default "solution/debug"
      */
     debugDir?: string;
 
     /**
-     * The name of the sppkg to create (including extension) Defaults to 'ClientSolution.sppkg'
+     * The name of the sppkg to create (including extension)
+     * @default "ClientSolution.sppkg"
      */
     zippedPackage?: string;
 
     /**
-     * The folder containing the raw feature_xml to import into the package. Defaults to 'feature_xml'
+     * The folder containing the raw feature_xml to import into the package.
+     * @default "feature_xml"
      */
     featureXmlDir?: string;
 
     /**
-     * The folder containing SharePoint assets (elements.xml, upgrade actions, etc.). Defaults to 'assets'
+     * The folder containing SharePoint assets (elements.xml, upgrade actions, etc.).
+     * @default "assets"
      */
     sharepointAssetDir?: string;
   };

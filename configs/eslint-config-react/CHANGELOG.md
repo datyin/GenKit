@@ -1,3 +1,7 @@
+`2023-08-03` - `0.0.8`
+
+- Disabled `react/react-in-jsx-scope`
+
 `2023-07-27` - `0.0.6`
 
 - Disabled `react/jsx-indent` because its buggy

@@ -29,12 +29,22 @@ const config: ESLint.ConfigData["overrides"] = [
               position: "before"
             },
             {
+              pattern: "react-dom",
+              group: "external",
+              position: "before"
+            },
+            {
               pattern: "vue",
+              group: "external",
+              position: "before"
+            },
+            {
+              pattern: "vite",
               group: "external",
               position: "before"
             }
           ],
-          pathGroupsExcludedImportTypes: ["react", "vue"],
+          pathGroupsExcludedImportTypes: ["react", "react-dom", "vue", "vite"],
           groups: [
             "builtin",
             "external",
