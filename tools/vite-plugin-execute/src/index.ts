@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
+import type { Plugin } from "vite";
 import { name } from "../package.json";
 import type { ChildProcess, SpawnOptions } from "node:child_process";
-import type { Plugin } from "vite";
 
 interface VitePluginOptions {
   /**

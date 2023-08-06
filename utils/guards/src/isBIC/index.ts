@@ -10,17 +10,13 @@ import { getString } from "../getString";
  * @see https://www.npmjs.com/package/ibantools
  */
 function isBIC(input: unknown): input is string {
-  const string = getString(input).toUpperCase().replace(/\s+/g, "");
+  const value = getString(input).toUpperCase().replace(/\s+/g, "");
 
-  if (string === "INFINITY") {
+  if (value.length === 0 || value === "INFINITY") {
     return false;
   }
 
-  if (string.length === 0) {
-    return false;
-  }
-
-  return isValidBIC(string);
+  return isValidBIC(value);
 }
 
 export { isBIC };
