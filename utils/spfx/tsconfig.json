@@ -1,0 +1,6 @@
+{
+  "extends": "@genkit/tsconfig-browser",
+  "include": [
+    "src/**/*.ts"
+  ]
+}

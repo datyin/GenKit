@@ -2,5 +2,17 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/spfx",
   "description": "SPFX type helpers, and other utilities for working with SharePoint Online.",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@pnp/sp": ">=3.0.0"
+  },
+  "dependencies": {
+    "@genkit/guards": "workspace:^",
+    "@microsoft/sp-webpart-base": "^1.17.4",
+    "@pnp/queryable": "^3.17.0",
+    "@pnp/sp": "^3.17.0"
+  },
+  "devDependencies": {
+    "@genkit/tsconfig-browser": "workspace:^"
+  }
 }
