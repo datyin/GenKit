@@ -1,6 +1,4 @@
-import { isArray } from "../isArray";
-import { isObject } from "../isObject";
-import { toString } from "../toString";
+import { toJSON, isArray, isObject, toString } from "../index";
 
 interface GetDifferenceItem {
   path: string;
@@ -27,7 +25,7 @@ function getDifferences(original: unknown, modified: unknown): GetDifferenceItem
 
   if ((isObject(original) && isObject(modified)) || (isArray(original) && isArray(modified))) {
     for (const key in original) {
-      if (JSON.stringify(original[key]) !== JSON.stringify(modified[key])) {
+      if (toJSON(original[key]) !== toJSON(modified[key])) {
         differences.push({ path: key, from: toString(original[key]), into: toString(modified[key]) });
       }
     }
@@ -39,13 +37,13 @@ function getDifferences(original: unknown, modified: unknown): GetDifferenceItem
         continue;
       }
 
-      if (JSON.stringify(modified[key]) !== JSON.stringify(original[key])) {
+      if (toJSON(modified[key]) !== toJSON(original[key])) {
         differences.push({ path: key, from: toString(original[key]), into: toString(modified[key]) });
       }
     }
   }
   else {
-    if (JSON.stringify(original) !== JSON.stringify(modified)) {
+    if (toJSON(original) !== toJSON(modified)) {
       differences.push({ path: "", from: toString(original), into: toString(modified) });
     }
   }

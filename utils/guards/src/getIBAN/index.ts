@@ -5,7 +5,9 @@ interface GetIBANOptions {
 }
 
 function getIBAN(input: unknown, options: GetIBANOptions = {}): string {
-  return isIBAN(input) ? input : isIBAN(options.default) ? options.default : "";
+  const value = isIBAN(input) ? input : isIBAN(options.default) ? options.default : "";
+
+  return value.replace(/\s+/g, "").toUpperCase();
 }
 
 export { getIBAN };
