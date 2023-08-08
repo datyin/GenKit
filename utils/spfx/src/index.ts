@@ -1,3 +1,5 @@
+export { spfxPackages } from "./spfxPackages";
+
 export { pnp, onInitPnP } from "./onInitPNP";
 
 export { isSiteUser } from "./isSiteUser";
@@ -13,6 +15,7 @@ export { getSpfxErrorMessage } from "./getSpfxErrorMessage";
 
 export { setItemRoleAssignments } from "./setItemRoleAssignments";
 
+export type { SpfxPackage } from "./spfxPackages";
 export type { ISiteUserInfoWithGroups } from "./types/user";
 export type { PnP } from "./onInitPNP";
 export type { GetPageItemOptions, GetPageItemResponse } from "./getPageItem";
