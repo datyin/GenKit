@@ -2,7 +2,19 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/spfx",
   "description": "SPFX type helpers, and other utilities for working with SharePoint Online.",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.umd.cjs",
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "dts": "tsc -p tsconfig.declaration.json",
