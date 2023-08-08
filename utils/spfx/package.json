@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "@genkit/tsconfig-browser": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
