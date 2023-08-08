@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/guards",
   "description": "Typeguards, type helpers, and other utilities for working with typescript/javascript types.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
@@ -12,7 +12,8 @@
     ".": {
       "types": "./dist/index.d.ts",
       "require": "./dist/index.umd.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "node": "./dist/index.cjs"
     }
   },
   "files": [

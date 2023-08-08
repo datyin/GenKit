@@ -26,7 +26,7 @@ export default defineConfig({
     lib: {
       entry: { index: "src/index.ts" },
       name,
-      formats: ["es", "umd"]
+      formats: ["es", "cjs", "umd"]
     },
     rollupOptions: {
       external,
