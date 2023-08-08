@@ -2,7 +2,7 @@ import { getArray, getEmail } from "@genkit/guards";
 import { getSpfxErrorMessage } from "../getSpfxErrorMessage";
 import { pnp } from "../onInitPNP";
 import type { ISiteUserInfoWithGroups } from "../types/user";
-import type { ISiteGroupInfo } from "@pnp/sp/site-groups/types";
+import type { ISiteGroupInfo } from "@pnp/sp/site-groups";
 
 interface GetSiteUsersResponse {
   users: ISiteUserInfoWithGroups[];

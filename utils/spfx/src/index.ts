@@ -11,6 +11,8 @@ export { getSiteUsers } from "./getSiteUsers";
 export { getSiteCurrentUser } from "./getSiteCurrentUser";
 export { getSpfxErrorMessage } from "./getSpfxErrorMessage";
 
+export { setItemRoleAssignments } from "./setItemRoleAssignments";
+
 export type { ISiteUserInfoWithGroups } from "./types/user";
 export type { PnP } from "./onInitPNP";
 export type { GetPageItemOptions, GetPageItemResponse } from "./getPageItem";

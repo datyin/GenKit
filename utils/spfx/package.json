@@ -3,7 +3,16 @@
   "name": "@genkit/spfx",
   "description": "SPFX type helpers, and other utilities for working with SharePoint Online.",
   "version": "0.0.1",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dts": "tsc -p tsconfig.declaration.json",
+    "dev": "vite build --mode development",
+    "build": "pnpm run typecheck && vite build --mode production && pnpm run dts",
+    "prepublish": "pnpm run build"
+  },
   "peerDependencies": {
+    "@microsoft/sp-webpart-base": ">=1.14.0",
+    "@pnp/queryable": ">=3.0.0",
     "@pnp/sp": ">=3.0.0"
   },
   "dependencies": {
