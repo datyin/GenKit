@@ -14,6 +14,7 @@ export { getSiteCurrentUser } from "./getSiteCurrentUser";
 export { getSpfxErrorMessage } from "./getSpfxErrorMessage";
 
 export { setItemRoleAssignments } from "./setItemRoleAssignments";
+export { removeItemRoleAssignments } from "./removeItemRoleAssignments";
 
 export type { SpfxPackage } from "./spfxPackages";
 export type { ISiteUserInfoWithGroups } from "./types/user";
