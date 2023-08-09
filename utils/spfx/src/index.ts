@@ -10,6 +10,7 @@ export { getItemRoleAssignments } from "./getItemRoleAssignments";
 export { getRoleDefinitions } from "./getRoleDefinitions";
 export { getSiteLanguage } from "./getSiteLanguage";
 export { getSiteUsers } from "./getSiteUsers";
+export { getSiteGroups } from "./getSiteGroups";
 export { getSiteCurrentUser } from "./getSiteCurrentUser";
 export { getSpfxErrorMessage } from "./getSpfxErrorMessage";
 
