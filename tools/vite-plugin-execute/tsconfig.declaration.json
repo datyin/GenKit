@@ -6,12 +6,10 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "declarationMap": false,
-    "outFile": "dist/index.d.ts",
-    "isolatedModules": false,
-    "allowImportingTsExtensions": false
+    "allowImportingTsExtensions": false,
+    "declarationDir": "./dist"
   },
-  "files": [
-    "./package.json",
-    "./src/index.ts"
+  "include": [
+    "./src/**/*.ts"
   ]
 }

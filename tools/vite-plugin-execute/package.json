@@ -2,11 +2,11 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/vite-plugin-execute",
   "description": "A vite plugin to execute shell command",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
@@ -35,6 +35,10 @@
     "dts": "tsc --project tsconfig.declaration.json",
     "build": "vite build && pnpm run dts",
     "prepublish": "pnpm run build"
+  },
+  "peerDependencies": {
+    "@types/node": ">=16.0",
+    "vite": ">=4.0"
   },
   "dependencies": {
     "@types/node": "^20.3.3",
