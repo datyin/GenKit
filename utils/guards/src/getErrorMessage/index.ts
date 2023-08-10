@@ -1,27 +1,22 @@
-import { isString, isObject, toString } from "../index";
-
-interface GetErrorMessageOptions {
-  default?: string;
-}
+import { toString, isStringNotEmpty } from "../index";
 
 /**
  * Extract the error message from the input
  * @param input The value to extract the error message from
  * @returns The error message if any
  */
-function getErrorMessage(input: unknown, options: Readonly<GetErrorMessageOptions> = {}): string {
-  if (isString(input)) {
+function getErrorMessage(input: unknown): string {
+  if (isStringNotEmpty(input)) {
     return input;
   }
 
-  if (isObject(input)) {
+  if (input != null && typeof input === "object" && !Array.isArray(input)) {
     if ("message" in input) return toString(input.message);
     if ("reason" in input) return toString(input.reason);
     if ("error" in input) return toString(input.error);
   }
 
-  return isString(options.default) ? options.default : "";
+  return "";
 }
 
 export { getErrorMessage };
-export type { GetErrorMessageOptions };
