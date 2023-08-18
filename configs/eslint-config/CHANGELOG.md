@@ -1,3 +1,8 @@
+`2023-08-18` - `0.0.9`
+
+- Updated dependencies to latest version
+- Improved support for '.cjs' & '.'cts'
+
 `2023-07-27` - `0.0.6`
 
 - Match version with `eslint-config-react`

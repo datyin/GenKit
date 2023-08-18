@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@genkit/emitter",
+  "description": "A simple global event emitter.",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "event",
+    "emitter",
+    "global"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
