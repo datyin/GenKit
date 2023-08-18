@@ -1,3 +1,7 @@
+`2023-08-18` - `0.0.9`
+
+- Updated Dependencies
+
 `2023-08-03` - `0.0.8`
 
 - Disabled `react/react-in-jsx-scope`

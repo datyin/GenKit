@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@genkit/eslint-config-react",
   "description": "ESLint config for BAT react projects",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
@@ -39,15 +39,15 @@
   },
   "dependencies": {
     "@genkit/eslint-config": "workspace:^",
-    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3"
   },
   "devDependencies": {
     "@genkit/tsconfig-browser": "workspace:^",
     "@genkit/tsconfig-node": "workspace:^",
-    "@types/eslint": "^8.44.1",
-    "@types/react": "^18.2.18",
+    "@types/eslint": "^8.44.2",
+    "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
