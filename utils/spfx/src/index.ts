@@ -14,6 +14,8 @@ export { getSiteGroups } from "./getSiteGroups";
 export { getSiteCurrentUser } from "./getSiteCurrentUser";
 export { getSpfxErrorMessage } from "./getSpfxErrorMessage";
 
+export { isPageSaved } from "./isPageSaved";
+
 export { setItemRoleAssignments } from "./setItemRoleAssignments";
 export { removeItemRoleAssignments } from "./removeItemRoleAssignments";
 
